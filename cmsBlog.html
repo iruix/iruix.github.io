@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CMS Blog - Braian</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/modal.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>CMS Blog in depth</h1>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/pic04.png" alt="" /></span>
+                                <h2>Features</h2>
+                                <b>Blog Admin Features</b>
+                                <p><img id='myImg' src="images/blogposts.png" style="width:100%;max-width:350px" alt="Deleting a post in Admin" />
+                                    <div id="myModal" class="modal">
+                                    <img class="modal-content" id="img01">
+                                    <div id="caption"></div>
+                                    </div>
+                                    Admin page is only accessible when you're logged in. It has a $_SESSION function to make site unaccessible to unauthorized users. 
+                                    Every logged in user can view the page but only admin can make some changes, like changing user rights, deleting posts and more. 
+                                    The dashboard checks database for posts, comments, users and categories. It displays them all in a graph. There are pages to view all posts, 
+                                    categories, users and comments. There is also Profile page, where you can edit your own profile. The CMS page displays current online users 
+                                    using Jquery to refresh info every few seconds.
+                                </p>
+                                <br>
+                                <b>Blog Front Features</b>
+                                <br>
+                                <p>
+                                    <img id='myImg3' src="images/blogreg.png" style="width:100%;max-width:350px" alt="Blog Registration Page">
+                                    <div id="myModal3" class="modal">
+                                    <img class="modal-content" id="img03">
+                                    <div id="caption3"></div>
+                                    </div>
+                                    
+                                    Blog front page is all dynamic. It displays posts if there are, if the database is empty, it displays a message, that says so 
+                                    It chooses categorys from the database and shows them in the navigation bar. There is Register page, that encrypts password using 
+                                    BCRYPT algorithm. Also there is a contact us page, where you can send emails to blog admin. You can sort posts by author, category and 
+                                    search by tags. Search engine uses tags to find similar items from the database. You can leave comments, but they have to be approved by 
+                                    admin to be shown in the comments section. Links are made active dynamically and pages are shown categories are shown using $_GET function.
+                                    </p>
+                                <ul class="actions">
+                                    <li><a href="index.html" class="button">Back to Home</a></li>
+                                </ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <section>
+                        <h2>Thanks for viewing my Portfolio page</h2>
+                    </section>
+                    <section>
+                        <h2>Contact Me</h2>
+                        <dl class="alt">
+                            <dt>Email</dt>
+                            <dd><a href="mailto:braianjullinen@gmail.com">braianjullinen@gmail.com</a></dd>
+                        </dl>
+                        <ul class="icons">
+                            <li><a href="https://www.instagram.com/iruixx/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                            <li><a href="https://github.com/iruix" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+                    <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                </footer>
+
+        </div>
+
+    <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/modal.js"></script>
+
+</body>
+</html>
